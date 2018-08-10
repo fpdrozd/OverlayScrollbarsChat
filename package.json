@@ -1,0 +1,36 @@
+{
+  "name": "overlayscrollbarschat",
+  "version": "0.1.0",
+  "description": "A simple OverlayScrollbars extension that provides basic chat window behaviour.",
+  "main": "dist/OverlayScrollbarsChat.umd.js",
+  "jsnext:main": "dist/OverlayScrollbarsChat.js",
+  "files": ["dist"],
+  "scripts": {
+    "test": "jest",
+    "prebuild": "npm test",
+    "build": "rollup -c rollup.es6.js && rollup -c rollup.umd.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fpdrozd/OverlayScrollbarsChat.git"
+  },
+  "keywords": [
+    "OverlayScrollbars",
+    "chat",
+    "scrollbar",
+    "scroll"
+  ],
+  "author": "fpdrozd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fpdrozd/OverlayScrollbarsChat/issues"
+  },
+  "homepage": "https://github.com/fpdrozd/OverlayScrollbarsChat#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.4.2",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.4.2",
+    "rollup": "^0.64.1"
+  }
+}
