@@ -19,24 +19,22 @@ npm install overlayscrollbarschat --save
 
 #### HTML
 
-Include **OverlayScrollbarsChat.umd.js** to your HTML file (before the **OverlayScrollbars**!)
+Include **OverlayScrollbarsChat.umd.js** to your HTML file (after the **OverlayScrollbars**!)
 
 ```html
-<script type="text/javascript" src="path/to/OverlayScrollbarsChat.umd.js"></script>
 <script type="text/javascript" src="path/to/OverlayScrollbars.js"></script>
+<script type="text/javascript" src="path/to/OverlayScrollbarsChat.umd.js"></script>
 ```
 
 #### Javascript
 
 ```js
 document.addEventListener('DOMContentLoaded', function() {
-  //Register the extension with the name "osChat"
-  OverlayScrollbars.extension('osChat', OverlayScrollbarsChat);
   //Initialize the plugin and get its instance
   const myScrollbar = OverlayScrollbars(document.querySelectorAll('body'), { });
 
-  //Add the previously registered extension "osChat" to the plugin instance
-  myScrollbar.addExt('osChat');
+  //Add the extension "OverlayScrollbarsChat" to the plugin instance
+  myScrollbar.addExt('OverlayScrollbarsChat');
 });
 ```
 
@@ -78,7 +76,7 @@ For more details about adding extensions check out [this](https://kingsora.githu
 #### Example
 
 ```js
-myScrollbar.addExt('osChat', {
+myScrollbar.addExt('OverlayScrollbarsChat', {
   appendScroll: {
     duration: 300,
     easing: 'swing'

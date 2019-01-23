@@ -1,4 +1,4 @@
-/*! overlayscrollbarschat v0.1.0 | (c) 2018-2018 fpdrozd | MIT license (see LICENSE) */
+/*! overlayscrollbarschat v0.1.1 | (c) 2018-2019 fpdrozd | MIT license (see LICENSE) */
 function scrollBehavior (scrollbar, elements, content, oldContentHeight, appendScroll) {
   const calculate = () => {
     const position = scrollbar.scroll().y.position;
@@ -44,4 +44,4 @@ function OverlayScrollbarsChat (defaultOptions, framework) {
   return osChat;
 }
 
-export default OverlayScrollbarsChat;
+OverlayScrollbars.extension('OverlayScrollbarsChat', OverlayScrollbarsChat);

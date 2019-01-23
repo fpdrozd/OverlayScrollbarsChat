@@ -1,8 +1,8 @@
-/*! overlayscrollbarschat v0.1.0 | (c) 2018-2018 fpdrozd | MIT license (see LICENSE) */
+/*! overlayscrollbarschat v0.1.1 | (c) 2018-2019 fpdrozd | MIT license (see LICENSE) */
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+  typeof exports === 'object' && typeof module !== 'undefined' ? factory() :
   typeof define === 'function' && define.amd ? define(factory) :
-  (global.OverlayScrollbarsChat = factory());
+  (factory());
 }(this, (function () { 'use strict';
 
   function scrollBehavior(scrollbar, elements, content, oldContentHeight, appendScroll) {
@@ -51,6 +51,6 @@
     return osChat;
   }
 
-  return OverlayScrollbarsChat;
+  OverlayScrollbars.extension('OverlayScrollbarsChat', OverlayScrollbarsChat);
 
 })));
