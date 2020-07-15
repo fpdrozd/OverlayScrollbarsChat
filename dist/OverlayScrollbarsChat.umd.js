@@ -1,4 +1,4 @@
-/*! overlayscrollbarschat v0.1.1 | (c) 2018-2019 fpdrozd | MIT license (see LICENSE) */
+/*! overlayscrollbarschat v0.2.0 | (c) 2018-2020 fpdrozd | MIT license (see LICENSE) */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory() :
   typeof define === 'function' && define.amd ? define(factory) :
@@ -7,7 +7,7 @@
 
   function scrollBehavior(scrollbar, elements, content, oldContentHeight, appendScroll) {
     var calculate = function calculate() {
-      var position = scrollbar.scroll().y.position;
+      var position = scrollbar.scroll().position.y;
       var hostHeight = elements.host.clientHeight;
       var contentHeight = content.clientHeight;
       if (!position) scrollbar.scroll({

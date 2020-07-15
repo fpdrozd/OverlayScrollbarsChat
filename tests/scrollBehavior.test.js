@@ -16,7 +16,7 @@ describe('ScrollBehavior', () => {
 
   it('Stays at the same position when prepending content', () => {
     const fakeScrollbar = {
-      scroll: jest.fn(() => ({ y: { position: 0 } }))
+      scroll: jest.fn(() => ({ position: {y: 0} }))
     };
 
     const scrollBehavior = ScrollBehavior(fakeScrollbar, fakeElements, fakeContent, fakeOldContentHeight);
@@ -28,7 +28,7 @@ describe('ScrollBehavior', () => {
 
   it('Follows appended content', () => {
     const fakeScrollbar = {
-      scroll: jest.fn(() => ({ y: { position: 400 } }))
+      scroll: jest.fn(() => ({ position: { y: 400 } }))
     };
     const fakeAppendScroll = {
       duration: 200,
@@ -44,7 +44,7 @@ describe('ScrollBehavior', () => {
 
   it('Does not follow appended content when scroll position is in the middle of the content', () => {
     const fakeScrollbar = {
-      scroll: jest.fn(() => ({ y: { position: 300 } }))
+      scroll: jest.fn(() => ({ position: { y: 300 } }))
     };
 
     const scrollBehavior = ScrollBehavior(fakeScrollbar, fakeElements, fakeContent, fakeOldContentHeight);

@@ -1,7 +1,7 @@
-/*! overlayscrollbarschat v0.1.1 | (c) 2018-2019 fpdrozd | MIT license (see LICENSE) */
+/*! overlayscrollbarschat v0.2.0 | (c) 2018-2020 fpdrozd | MIT license (see LICENSE) */
 function scrollBehavior (scrollbar, elements, content, oldContentHeight, appendScroll) {
   const calculate = () => {
-    const position = scrollbar.scroll().y.position;
+    const position = scrollbar.scroll().position.y;
     const hostHeight = elements.host.clientHeight;
     const contentHeight = content.clientHeight;
 
