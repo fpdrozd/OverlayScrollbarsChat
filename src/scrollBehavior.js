@@ -1,6 +1,6 @@
 function scrollBehavior (scrollbar, elements, content, oldContentHeight, appendScroll) {
   const calculate = () => {
-    const position = scrollbar.scroll().y.position;
+    const position = scrollbar.scroll().position.y;
     const hostHeight = elements.host.clientHeight;
     const contentHeight = content.clientHeight;
 
