@@ -1,6 +1,6 @@
 {
   "name": "overlayscrollbarschat",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A simple OverlayScrollbars extension that provides basic chat window behaviour.",
   "main": "dist/OverlayScrollbarsChat.umd.js",
   "jsnext:main": "dist/OverlayScrollbarsChat.js",
